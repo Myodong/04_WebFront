@@ -11,42 +11,48 @@
     <form action="">
         <fieldset>
             <legend>필수 입력 사항</legend>
-                <table>
-                    <table border="1">
+                <table border="0">
                     <tr>
                         <th>ID</th>
-                        <th><input type="text" placeholder="아이디 10글자 이내" max="10"></th>
-                        <th><button>중복 확인</button></th>
+                        <th>
+                            <input type="text" placeholder="아이디 10글자 이내" max="10">
+                        </th>
+                        <th>
+                            <button>중복 확인</button>
+                        </th>
                     </tr>
                     <tr>
                         <th>비밀번호</th>
-                        <th colspan="2"><input type="password"placeholder="영문,숫자,특수문자 포함 8자 이상" min="8" ></th>
+                        <th colspan="2">
+                            <input type="password" size="32" placeholder="영문,숫자,특수문자 포함 8자 이상" min="8" >
+                        </th>
                     </tr>
                     <tr>
                         <th >비밀번호확인</th>
-                        <th colspan="2"><input type="password" ></th>
+                        <th colspan="2">
+                            <input type="password" size="32" >
+                        </th>
                     </tr>
-                    <th>Email</th>
-                    <th><input type="email"></th>
-                    <th>
+                    <tr>
+                        <th>Email</th>
+                        <th>
+                            <input type="email">
+                        </th>
+                        <th>
                         <select name="email">
                             <option >직접입력</option>
                             <option >네이버</option>
                             <option >다음</option>
                         </select>
-                    </th>
+                        </th>
+                    </tr>
                 </table>
-               
-
-asds
-           
-
-
-
-
-      
-       
         </fieldset>
+        <fieldset>
+            <legend>추가 정보</legend>
+        
+        </fieldset>
+
     </form>
 </body>
 </html>
