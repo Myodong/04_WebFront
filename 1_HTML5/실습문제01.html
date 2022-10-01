@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제01</title>
+</head>
+<body>
+
+    <form action="">
+    <label for="inputName">고객명 : </label> 
+    <input type="text" id="inputName"><br><br>
+
+    <label for="inputPho">전화번호 : </label> 
+    <input type="tel" id="inputPho"><br><br>
+
+    <label for="inputEmail">E-mail : </label> 
+    <input type="email" id="inputEmail"><br><br>
+
+    피자선택 : <select name="pizz">
+        <option>피자를 선택하세요.</option>
+        <option value="1">베이컨피자</option>
+        <option value="2">포테이토피자</option>
+        <option value="3">콤비네이션피자</option>
+    </select>
+    <fieldset>
+        <legend>피자 사이즈</legend>
+        <input type="radio" id="s" name="sizeL" value="small">
+        <label for="s">Small</label> <br><br>
+
+        <input type="radio" id="m" name="sizeL" value="medium">
+        <label for="m">Medium</label> <br><br>
+
+        <input type="radio" id="l" name="sizeL" value="large">
+        <label for="l">Large</label> <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>토핑 선택</legend>
+        <input type="checkbox" id="b" name="bacon" value="ToppingsB">
+        <label for="b">베이컨</label> <br><br>
+
+        <input type="checkbox" id="c" name="cheese" value="ToppingsC">
+        <label for="c">치즈</label> <br><br>
+
+        <input type="checkbox" id="o" name="onion" value="ToppingsO">
+        <label for="o">양파</label> <br><br>
+
+        <input type="checkbox" id="m" name="mushroom" value="ToppingsM">
+        <label for="m">버섯</label> <br><br>
+    </fieldset> <br><br>
+
+    희망배송시간 <input type="time"> <br><br>
+
+    배송시 요청 사항 : 
+    <textarea rows="3" cols="20"></textarea><br><br>
+    <button>주문하기</button>
+    </form>
+</body>
+</html>
