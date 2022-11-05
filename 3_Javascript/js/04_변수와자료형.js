@@ -24,7 +24,7 @@ function test(){
         var num5 = 500;
         num6 = 600;
     }
-
+ 
     console.log("if문 종료 후 num5 : " + num5); // function 지역 변수
     console.log("if문 종료 후 num6 : " + num6); // 전역 변수
     
