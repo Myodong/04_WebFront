@@ -20,7 +20,6 @@ num4 = 400;     // 전역 변수
 console.log("함수 내부 num3 : "+num3);
 console.log("함수 내부 num4 : "+num4);
 
-<<<<<<< Updated upstream
     if(num3 == 300){
         var num5 = 500;
         num6 = 600;
@@ -29,16 +28,6 @@ console.log("함수 내부 num4 : "+num4);
     console.log("if문 종료 후 num5 : " + num5); // function 지역 변수
     console.log("if문 종료 후 num6 : " + num6); // 전역 변수
     
-=======
-if(num3 == 300){
-var num5 = 500;
-num6 = 600;
-}
-
-console.log("if문 종료 후 num5 : " + num5); // function 지역 변수
-console.log("if문 종료 후 num6 : " + num6); // 전역 변수
-
->>>>>>> Stashed changes
 }
 // *** script 언어는 중간에 에러가 발생하면 해석을 멈춤 ***
 
