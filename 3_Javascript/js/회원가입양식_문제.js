@@ -104,3 +104,11 @@ function validate() {
     return true;
 
 }
+
+function  validate(){
+
+    const gender = document.querySelector("input[name='gender']:checked");
+    if()
+
+
+}
