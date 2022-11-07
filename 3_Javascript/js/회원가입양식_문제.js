@@ -1,6 +1,8 @@
+
+//아이디 
 const inputId = document.getElementById("inputId"); // 입력받은 아이디 값가져오기
 
-inputId.addEventListener("input", function(){  
+inputId.addEventListener("change", function(){  
 
     const regEx =/^[a-z][a-zA-Z\d\-\_]{6,14}$/; //정규표현식
 
@@ -14,6 +16,7 @@ inputId.addEventListener("input", function(){
     }
 })
 
+// 비밀번호
 const inputPw =document.getElementById("inputPw");
 const inputPwConfirm =document.getElementById("inputPwConfirm");
 const pwMessage =document.getElementById("pwMessage");
@@ -27,7 +30,7 @@ inputPwConfirm.addEventListener("keyup",function(){ //비밀번호 확인 작성
     }
 })
 
-inputPwConfirm.addEventListener("input",function(){
+inputPwConfirm.addEventListener("keyup",function(){
 
     if(inputPwConfirm.value==inputPw.value){
         pwMessage.innerText="비밀번호 일치";
@@ -41,7 +44,7 @@ inputPwConfirm.addEventListener("input",function(){
     }
 })
 
-inputPw.addEventListener("input",function(){
+inputPw.addEventListener("keyup",function(){
 
     if(inputPwConfirm.value==inputPw.value){
         pwMessage.innerText="비밀번호 일치";
@@ -55,5 +58,49 @@ inputPw.addEventListener("input",function(){
     }
 })
 
-
+// 이름
 const inputName = document.getElementById("inputName"); // 입력값을 가져옴
+const nameMessage = document.getElementById("nameMessage"); // 입력값을 가져옴
+
+
+inputName.addEventListener("change",function(){
+
+    const regEx = /^[가-힣]{2,5}$/;
+
+    if(regEx.test(inputName.value)){ //조건이 맞을때
+        nameMessage.innerText="정상입력"
+        nameMessage.classList.remove("error");
+        nameMessage.classList.add("confirm");
+        
+    } else {
+        nameMessage.innerText="한글만 입력하세요";
+        nameMessage.classList.remove("confirm");
+        nameMessage.classList.add("error");
+    }
+
+})
+
+
+function validate() {
+
+    // 성별이 선택되지 않은 경우
+    // 방법 1
+    const gender = document.getElementsByName("gender");
+    if(!gender[0].checked && !gender[1].checked){
+        alert("성별을 선택해주세요")
+        return false;
+    }
+
+    // 전화번호 형식이 올바르지 않을 경우
+    const inputTel =document.getElementById("inputTel");
+
+    const regEx = /^[0][0-9]{1,2}-[0-9]{3,4}-[0-9]{4}/;
+
+    if(!regEx.test(inputTel.value)){
+        alert("전화번호의 형식이 올바르지 않습니다.");
+        return false;
+    }
+
+    return true;
+
+}
