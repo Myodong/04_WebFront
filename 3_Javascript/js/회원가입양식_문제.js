@@ -20,9 +20,40 @@ const pwMessage =document.getElementById("pwMessage");
 
 inputPwConfirm.addEventListener("keyup",function(){ //비밀번호 확인 작성인 상태
 
-    if(inputPw.value.trim().length == 0){ // 비밀번호 미입력상태일태 비밀번호 작성
+    if(inputPw.value.trim().length == 0){           // 비밀번호 미입력상태일태 비밀번호 작성
         inputPwConfirm.value="";                    // 비밀번호 내용 삭제
         alert("비밀번호를 입력해주세요");           // 메세지 출려
         inputPw.focus();   // 포커스 이동 
     }
 })
+
+inputPwConfirm.addEventListener("input",function(){
+
+    if(inputPwConfirm.value==inputPw.value){
+        pwMessage.innerText="비밀번호 일치";
+        pwMessage.classList.remove("error");
+        pwMessage.classList.add("confirm");
+
+    } else{
+        pwMessage.innerText="비밀번호 불일치";
+        pwMessage.classList.remove("confirm");
+        pwMessage.classList.add("error");
+    }
+})
+
+inputPw.addEventListener("input",function(){
+
+    if(inputPwConfirm.value==inputPw.value){
+        pwMessage.innerText="비밀번호 일치";
+        pwMessage.classList.remove("error");
+        pwMessage.classList.add("confirm");
+
+    } else{
+        pwMessage.innerText="비밀번호 불일치";
+        pwMessage.classList.remove("confirm");
+        pwMessage.classList.add("error");
+    }
+})
+
+
+const inputName = document.getElementById("inputName"); // 입력값을 가져옴
