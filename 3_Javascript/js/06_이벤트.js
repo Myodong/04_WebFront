@@ -1,7 +1,7 @@
 // 인라인 이벤트 모델 확인하기
 function fnTest1(btn){
 
-    console.log(btn.style); //요소에 적용할 수 있는 scc 속성 확인
+    console.log(btn.style); //요소에 적용할 수 있는 CSS 속성 확인
 
     // JS로 요소에 CSS 지정시
     // inline 형식으로 CSS 코드가 추가된다.

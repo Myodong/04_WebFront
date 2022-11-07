@@ -45,9 +45,9 @@ btn3.addEventListener("click",function(){
 document.getElementById("btn4").addEventListener("click", function(){
 
     // rgb 색상 랜덤 대입(0 ~ 255)
-    const r =Math.floor(Math.random()* 256) // 0.0<= ran <=256.0
-    const g =Math.floor(Math.random()* 256) // 0.0<= ran <=256.0
-    const b =Math.floor(Math.random()* 256) // 0.0<= ran <=256.0
+    const r =Math.floor(Math.random()* 256) // 0.0 <= ran <= 256.0
+    const g =Math.floor(Math.random()* 256) // 0.0 <= ran <= 256.0
+    const b =Math.floor(Math.random()* 256) // 0.0 <= ran <= 256.0
 
     document.querySelector("body").style.backgroundColor = "rgb("+r+","+g+","+b+")"
 })

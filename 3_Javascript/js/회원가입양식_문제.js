@@ -90,6 +90,14 @@ function validate() {
         alert("성별을 선택해주세요")
         return false;
     }
+    // 방법 2
+    // const gender = document.querySelector("input[name='gender']:checked");
+    // if(gender == null){
+    //     alert("성별을 선택해주세요");
+    //     return false;
+    // }
+
+
 
     // 전화번호 형식이 올바르지 않을 경우
     const inputTel =document.getElementById("inputTel");
@@ -102,13 +110,5 @@ function validate() {
     }
 
     return true;
-
-}
-
-function  validate(){
-
-    const gender = document.querySelector("input[name='gender']:checked");
-    if()
-
 
 }
