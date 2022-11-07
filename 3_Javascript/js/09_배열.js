@@ -22,7 +22,7 @@ document.getElementById("btn1").addEventListener("click", function(){
     console.log(arr1);
 
     // for문으로 배열 요소 반복 접근하기
-    // 1. 일반 foor문 - 배열, 컬렉션
+    // 1. 일반 for문 - 배열, 컬렉션
     for(let i = 0; i <arr4.length; i++){
         console.log(arr4[i]);
     }
@@ -85,7 +85,7 @@ document.getElementById("btn2").addEventListener("click", function(){
     console.log("초밥 인덱스 : "+ arr.indexOf("초밥"));
     console.log("갈비가 arr에 포함되어 있는가? : " + (arr.indexOf("갈비")!= -1));
 
-    // 배열.srot() : 배열내 요소를 오름차순으로 정렬(문자열 기준)
+    // 배열.sort() : 배열내 요소를 오름차순으로 정렬(문자열 기준)
     console.log(arr.sort());
 
     // 숫자 정렬의 문제점과 해결 방법
